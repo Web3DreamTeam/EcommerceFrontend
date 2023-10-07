@@ -1,6 +1,6 @@
 import { Text, Flex, Stack, Input, InputRightElement, InputLeftElement, InputGroup, Icon } from "@chakra-ui/react"
 
-import {BiSearchAlt} from 'react-icons/bi'
+import {FcSearch} from 'react-icons/fc'
 import ProductCard from "./components/ProductCard"
 
 export default function Home() {
@@ -16,11 +16,9 @@ export default function Home() {
     <Flex w={"100%"} alignItems={'center'} flexDirection={'column'}>
       <Flex mb={10} flexDirection={'row'} justifyContent={'space-around'}>
         <InputGroup>
-          <InputLeftElement
-            color='gray.300'
-          >
-            <Icon ></Icon>
-          </InputLeftElement>
+          <InputRightElement>
+            <FcSearch/>
+          </InputRightElement>
         <Input w={'100%'} placeholder='Search for products' />
       </InputGroup>
       </Flex>
