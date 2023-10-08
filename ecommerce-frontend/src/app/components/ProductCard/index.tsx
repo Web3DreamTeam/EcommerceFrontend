@@ -3,7 +3,11 @@ import { Button, ButtonGroup, Card, CardBody, CardFooter, Divider, Heading, Imag
 import ProductDetails from "../common/ProductDetails";
 import { useState } from "react";
 
-const ProductCard = () => {
+interface ProductCardProps {
+    productImage:string;
+}
+
+const ProductCard = ({productImage}:ProductCardProps) => {
 
     const [isProductDetailsOpen, setIsProductDetailsOpen] = useState(false); 
 
@@ -17,7 +21,7 @@ const ProductCard = () => {
         <Card m={3}>
             <CardBody>
                 <Image
-                src='/medicine-image.png'
+                src={productImage}
                 alt='oscillocosinum flue like symptoms medicine'
                 width={250}
                 borderRadius='lg'
