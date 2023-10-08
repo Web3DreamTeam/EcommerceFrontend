@@ -2,6 +2,7 @@ import { Text, Flex, Stack, Input, InputRightElement, InputLeftElement, InputGro
 
 import {FcSearch} from 'react-icons/fc'
 import ProductCard from "./components/ProductCard"
+import Footer from "./components/common/Footer"
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       </Flex>
     </Flex>
     </Stack>
+    <Footer/>
     </>
   )
 }
